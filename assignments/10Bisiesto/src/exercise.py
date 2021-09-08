@@ -1,7 +1,11 @@
+#Año bisiesto
 
-def main():
-    #escribe tu código abajo de esta línea
-    pass
+def añobisiesto():
+    if 0 ==  año % 4:
+        print ("Verdadero")
+    else:
+        if 0== (año % 100) or (año % 400):
+            print ("Falso")
 
-if __name__=='__main__':
-    main()
+año = int(input("Dame el año"))
+añobisiesto()
